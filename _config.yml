@@ -14,7 +14,7 @@ timezone: Pacific/Auckland
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Laura's Dev Blog # the main title
+title: Laura's Blog # the main title
 
 tagline: My programming learning note # it will display as the subtitle
 
@@ -32,7 +32,7 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Laura
-  email: laurainnz2@gmail.com # change to your email address
+  email:  # change to your email address
   links:
     # The first element serves as the copyright owner's link
       - https://github.com/cly163519 # change to your GitHub homepage
@@ -218,3 +218,4 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+rss_icon: false
