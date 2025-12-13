@@ -9,7 +9,7 @@ tags: [security, java]
 
 Which encrypts and decrypts, Java or PHP? It depends on who has the sensitive data to protect.
 
-1. Scenario 1: Java Encryption → PHP Decryption (What I'm doing now)
+Scenario 1: Java Encryption → PHP Decryption (What I'm doing now)
 User enters password in the App
 ↓ 
 Java encrypts "password123" → "sdvvzrug456"
@@ -20,7 +20,7 @@ PHP decrypts → Gets "password123" → Stores in database
 
 Purpose: Protects user-sent data (login, payment, etc.)
 
-2. Scenario 2: PHP Encryption → Java Decryption (Reverse)
+Scenario 2: PHP Encryption → Java Decryption (Reverse)
 Server has confidential data
 ↓ 
 PHP encrypts "secret" → "vhfuhw"
@@ -31,7 +31,7 @@ Java decrypts → Gets "secret" → Displays to user
 
 Purpose: Protects data returned by the server (API keys, personal information, etc.)
 
-3. Scenario 3: Two-way Encryption
+Scenario 3: Two-way Encryption
 
 Java Encryption ────► PHP Decryption
 
@@ -51,7 +51,7 @@ It can be Java to PHP, or PHP to Java, depending on business requirements. Retry
 
 ## Basic Cipher Implementation
 
-1. Caeser Cipher
+Caeser Cipher
 
 ```java
           public class CaesarCipher {
@@ -82,7 +82,7 @@ It can be Java to PHP, or PHP to Java, depending on business requirements. Retry
       }
 ```
 
-2. Transposition Cipher
+Transposition Cipher
 
 ```java
 
@@ -252,23 +252,23 @@ Step 6: PHP sends confirmation
 ---
 
 
-1. Both sides must know the key
+**Both sides must know the key**
 
 | Side | Key | Action |
 |------|-----|--------|
 | Java (Client) | offset = 3 | Encrypt |
 | PHP (Server) | offset = 3 | Decrypt |
 
-**If the keys don't match, decryption fails!**
+If the keys don't match, decryption fails!
 
-2. Encryption and Decryption are opposite
+**Encryption and Decryption are opposite**
 
 | Operation | Formula |
 |-----------|---------|
 | Encrypt | `newChar = char + offset` |
 | Decrypt | `newChar = char - offset` |
 
-3. URL Encoding is required
+**URL Encoding is required**
 ```
 Problem:  Encrypted text may contain special characters
           "Khoor#iurp" contains # which breaks URL
@@ -278,7 +278,7 @@ Solution: URLEncoder.encode() converts special characters
 ```
 
 
-4. Who encrypts? Who decrypts?
+**Who encrypts? Who decrypts?**
 
 It depends on **who has the sensitive data to protect**.
 
