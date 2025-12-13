@@ -9,7 +9,9 @@ tags: [security, java]
 
 Which encrypts and decrypts, Java or PHP? It depends on who has the sensitive data to protect.
 
-Scenario 1: Java Encryption → PHP Decryption (What I'm doing now)
+Scenario 1: Java Encryption → PHP Decryption
+
+```
 User enters password in the App
 ↓ 
 Java encrypts "password123" → "sdvvzrug456"
@@ -17,10 +19,13 @@ Java encrypts "password123" → "sdvvzrug456"
 Sends to server
 ↓ 
 PHP decrypts → Gets "password123" → Stores in database
+```
 
 Purpose: Protects user-sent data (login, payment, etc.)
 
 Scenario 2: PHP Encryption → Java Decryption (Reverse)
+
+```
 Server has confidential data
 ↓ 
 PHP encrypts "secret" → "vhfuhw"
@@ -28,14 +33,18 @@ PHP encrypts "secret" → "vhfuhw"
 Sends to client
 ↓ 
 Java decrypts → Gets "secret" → Displays to user
+```
 
 Purpose: Protects data returned by the server (API keys, personal information, etc.)
 
 Scenario 3: Two-way Encryption
 
+```
 Java Encryption ────► PHP Decryption
 
 Java Decryption ◄──── PHP Encryption
+
+```
 
 Purpose: Both parties encrypt communication (most secure)
 
