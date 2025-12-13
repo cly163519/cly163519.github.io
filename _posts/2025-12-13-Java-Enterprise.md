@@ -7,28 +7,30 @@ tags: [java, enterprise]
 
 ## Enterprise development(Advanced)
 
-这是普通文字段落。可以写很多内容，Markdown 会自动换行。
+This is java enterprise codes.
 
-## GET 和 POST 的区别
+## Differences between GET and POST
 
-GET 请求把数据放在 URL 里，POST 请求把数据放在请求体里。
+GET 
+
 ```java
-// 这是 Java 代码块
+// THIS IS JAVA
 URL url = new URI("http://localhost/test.php").toURL();
 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 ```
 
 ## Advanced extension
 
-- 第一点
-- 第二点
-- 第三点
+1. FIRST
+2. SECOND
+3. THIRD
 
-## 代码高亮
+## CODING BLOCKS
 
-下面是 PHP 代码：
-```php
-<?php
-echo "Hello World";
-?>
+this is java：
+
+```java
+
+  public static void main
+
 ```
