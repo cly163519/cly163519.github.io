@@ -9,7 +9,7 @@ tags: [security, java]
 
 Which encrypts and decrypts, Java or PHP? It depends on who has the sensitive data to protect.
 
-Scenario 1: Java Encryption → PHP Decryption
+**Scenario 1: Java Encryption → PHP Decryption**
 
 ```
 User enters password in the App
@@ -23,7 +23,7 @@ PHP decrypts → Gets "password123" → Stores in database
 
 Purpose: Protects user-sent data (login, payment, etc.)
 
-Scenario 2: PHP Encryption → Java Decryption (Reverse)
+**Scenario 2: PHP Encryption → Java Decryption (Reverse)**
 
 ```
 Server has confidential data
@@ -37,7 +37,7 @@ Java decrypts → Gets "secret" → Displays to user
 
 Purpose: Protects data returned by the server (API keys, personal information, etc.)
 
-Scenario 3: Two-way Encryption
+**Scenario 3: Two-way Encryption**
 
 ```
 Java Encryption ────► PHP Decryption
@@ -223,38 +223,38 @@ Transposition Cipher
 ```
 Step 1: Java prepares message
 ┌─────────────────────────────┐
-│  message = "Hello from Java!" │
+│  message = "Hello from Java!" 
 └─────────────────────────────┘
               │
               ▼
 Step 2: Java encrypts (offset +3)
 ┌─────────────────────────────┐
-│  encrypted = "Khoor#iurp#Mdyd$" │
+│  encrypted = "Khoor#iurp#Mdyd$" 
 └─────────────────────────────┘
               │
               ▼
 Step 3: Java sends encrypted data
 ┌─────────────────────────────┐
-│  URL: server.php?data=Khoor... │
-│         (via network)        │
+│  URL: server.php?data=Khoor... 
+│         (via network)        
 └─────────────────────────────┘
               │
               ▼
 Step 4: PHP receives encrypted data
 ┌─────────────────────────────┐
-│  $_GET['data'] = "Khoor..."  │
+│  $_GET['data'] = "Khoor..."  
 └─────────────────────────────┘
               │
               ▼
 Step 5: PHP decrypts (offset -3)
 ┌─────────────────────────────┐
-│  decrypted = "Hello from Java!" │
+│  decrypted = "Hello from Java!" 
 └─────────────────────────────┘
               │
               ▼
 Step 6: PHP sends confirmation
 ┌─────────────────────────────┐
-│  echo "Decrypted: Hello..."  │
+│  echo "Decrypted: Hello..."  
 └─────────────────────────────┘
 ```
 
@@ -277,7 +277,7 @@ If the keys don't match, decryption fails!
 | Encrypt | `newChar = char + offset` |
 | Decrypt | `newChar = char - offset` |
 
-**URL Encoding is required**
+URL Encoding is required.
 ```
 Problem:  Encrypted text may contain special characters
           "Khoor#iurp" contains # which breaks URL
@@ -287,11 +287,9 @@ Solution: URLEncoder.encode() converts special characters
 ```
 
 
-**Who encrypts? Who decrypts?**
+Who encrypts? Who decrypts? It depends on **who has the sensitive data to protect**.
 
-It depends on **who has the sensitive data to protect**.
-
-Scenario 1: Client sends sensitive data
+**Scenario 1: Client sends sensitive data**
 ```
 User enters password in App
          │
@@ -307,7 +305,7 @@ PHP decrypts → gets "password123" → saves to database
 
 Use case: Login, payment, registration
 
-Scenario 2: Server sends sensitive data
+**Scenario 2: Server sends sensitive data**
 ```
 Server has secret API key
          │
@@ -323,7 +321,7 @@ Java decrypts → gets "secret-key" → uses it
 
 Use case: API keys, personal information
 
-Scenario 3: Both directions
+**Scenario 3: Both directions**
 ```
 Java encrypts ────────► PHP decrypts
 Java decrypts ◄──────── PHP encrypts
