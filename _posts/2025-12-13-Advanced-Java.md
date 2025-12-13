@@ -5,7 +5,7 @@ categories: [programming, Java]
 tags: [java, advanced features]
 ---
 
-## Generices<>
+## Generices `<>`
 
 这是普通文字段落。可以写很多内容，Markdown 会自动换行。
 
