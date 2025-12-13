@@ -1,5 +1,5 @@
 ---
-title: introduction to Java networking
+title: Introduction to Java networking
 date: 2025-12-13 10:00:00 +1300
 categories: [learning, programming, Java]
 tags: [java, networking, cloud]
