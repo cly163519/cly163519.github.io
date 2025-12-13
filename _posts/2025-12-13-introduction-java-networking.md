@@ -5,9 +5,12 @@ categories: [learning, programming, Java]
 tags: [java, networking, cloud]
 ---
 
+
 ## Download webpages to local computer
 
+
 This Java example is a very typical example of using standard Java libraries (java.net.URL and java.net.URLConnection) to send an HTTP GET request and download web page content.
+
 
 ```java
 package Network;
@@ -66,13 +69,20 @@ public class net {
 }
 ```
 
+## Java network programming steps: 
+
+URL → Connection → Send → Read
+
 ## Why is this a GET request? Why not a POST request?
 
 - 1. Default Behavior (GET is the default): In Java's URLConnection and HttpURLConnection: If the HTTP request method is not explicitly set, the connection object uses the GET method by default. You can explicitly set it to POST using `httpc.setRequestMethod("POST");`, but since this line is not present in your code, it follows the default GET behavior.
+     
 - 2. Differences in HTTP Request Methods:
+     
 |---------|-------------|--------------|
 | Purpose | Request (retrieve) data from server | Submit (send) data to server |
 | Data Location | Data appended to URL (e.g., `?...&key=value`) | Data sent in Request Body |
 | Security | Less secure (data exposed in URL) | More secure (data not visible in URL) |
 | Idempotency | Yes (repeated requests have no side effects) | No (repeated submissions may create multiple resources) |
+
 - 3. The code demonstrates this: No request method is set, so it defaults to GET. Only `connection.getInputStream()` is called to retrieve the server's response data. No `connection.getOutputStream()` is called to write or send any request body data to the server. In summary: The purpose is simply to retrieve the HTML page content from Wikipedia, which perfectly conforms to the semantics of a GET request.
