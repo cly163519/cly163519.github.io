@@ -1,4 +1,3 @@
-
 ---
 title: Java Enterprise
 date: 2025-12-13 17:40:00 +1300
