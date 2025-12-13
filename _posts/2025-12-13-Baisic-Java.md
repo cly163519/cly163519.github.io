@@ -1,8 +1,8 @@
 ---
-title: Java Syntax Summery
+title: Java Basic Syntax
 date: 2025-12-13 17:03:00 +1300
 categories: [Syntax, Java]
-tags: [java, syntax, OOP, Core API, advanced features, java enterprises]
+tags: [java, syntax, OOP, Core API]
 ---
 ## Java basic syntax
 
