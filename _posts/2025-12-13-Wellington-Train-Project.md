@@ -1,5 +1,5 @@
 ---
-title: Java Basic Syntax
+title: Java Basic Syntax - Wellington Train project exercise
 date: 2025-12-13 17:03:00 +1300
 categories: [Syntax, Java]
 tags: [java, syntax, OOP, Core API]
