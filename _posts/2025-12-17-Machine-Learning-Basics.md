@@ -196,5 +196,5 @@ After 12 years in insurance, I realized:
 > Now I'm just teaching computers to do it faster.
 
 
-*Written with AI assistance (Claude) | December 2024
-The core insights connecting ML to insurance underwriting came from my 12 years of industry experience.*
+*The core insights connecting ML to insurance underwriting came from my 12 years of industry experience.
+  Written with AI assistance (Claude) | December 2025*
