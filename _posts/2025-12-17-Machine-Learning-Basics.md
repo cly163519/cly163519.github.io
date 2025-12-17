@@ -192,9 +192,7 @@ model.fit(patient_data, diagnoses)
 
 After 12 years in insurance, I realized:
 
-> I've been doing "manual machine learning" all along - 
-> reviewing cases, finding patterns, making decisions.
-> 
+> I've been doing "manual machine learning" all along - reviewing cases, finding patterns, making decisions.
 > Now I'm just teaching computers to do it faster.
 
 
