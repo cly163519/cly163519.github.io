@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Complete Machine Learning Workflow: A Step-by-Step Guide"
-date: 2024-12-18
+date: 2025-12-18
 categories: [Machine Learning, Python, Scikit-learn]
 tags: [KNN, Decision Tree, Classification, Tutorial]
 ---
