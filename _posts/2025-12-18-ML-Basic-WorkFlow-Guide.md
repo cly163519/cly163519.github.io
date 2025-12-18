@@ -422,4 +422,4 @@ Load → Split → Scale → Create → Fit → Predict → Evaluate
 
 ---
 
-* Written assisted with AI(Claude) *
+* Written assisted with AI(Claude)
