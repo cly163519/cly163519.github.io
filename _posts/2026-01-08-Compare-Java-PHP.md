@@ -271,5 +271,6 @@ For web development projects, especially as a beginner or for rapid prototyping,
 
 - [PHP Official Documentation](https://www.php.net/docs.php)
 - [Java Tutorials](https://docs.oracle.com/javase/tutorial/)
-- [My Travel Blog Project](https://github.com/yourusername/travel-blog) _(if you decide to publish it)_
+
+**Write with AI Claude assistance**
 
