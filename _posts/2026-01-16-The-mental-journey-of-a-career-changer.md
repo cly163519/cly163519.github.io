@@ -168,6 +168,3 @@ The essence of backend development is:
 
 
 
----
-
-*This post is part of the "Backend for Beginners" series. Stay tuned for more incremental learning steps!*
