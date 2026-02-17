@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Times-7 RFID 系统 - 完整架构设计文档
-date: 2024-01-28
+date: 2026-02-17
 categories: [System Design, Architecture]
 tags: [RFID, FastAPI, Supabase, React Native]
 ---
@@ -357,15 +357,15 @@ Gateway 返回最近 3 秒的活跃标签列表
 流程：
   ┌─────────────────────────────────────────┐
   │ 1. Modal 打开时，自动加载                │
-  │                                          │
+  │                                         │
   │    查询 1：                              │
   │    SELECT * FROM product_info           │
-  │    WHERE tid = {标签ID}                 │
-  │    → 返回：tid, epc, description,       │
-  │      origin, produced_on                │
-  │                                         │
+  │    WHERE tid = {标签ID}                  │
+  │    → 返回：tid, epc, description,        │
+  │      origin, produced_on                 │
+  │                                          │
   │    查询 2：                              │
-  │    SELECT * FROM product_photo          │
+  │    SELECT * FROM product_photo           │
   │    WHERE tid = {标签ID}                  │
   │    ORDER BY created_at DESC LIMIT 1     │
   │    → 返回：最新一张图片的 photo_url       │
@@ -433,10 +433,10 @@ Gateway 返回最近 3 秒的活跃标签列表
   │    对每一行显示：                       │
   │    - tid (标签 ID)                     │
   │    - date (最后扫描时间)                │
-  │    - auth (✓ 真品 / ✗ 可疑)           │
-  │    - info (IAS 返回的完整信息)        │
+  │    - auth (✓ 真品 / ✗ 可疑)            │
+  │    - info (IAS 返回的完整信息)          │
   │                                        │
-  │    列表项可点击                        │
+  │    列表项可点击                         │
   └────────────────────────────────────────┘
                     ↓
   ┌────────────────────────────────────────┐
