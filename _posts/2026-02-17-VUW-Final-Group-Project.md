@@ -1055,45 +1055,7 @@ if (photo) {
 
 ---
 
-## 第六部分：用于报告的总结段落
 
-### 完整段落（可直接用于项目报告）
-
-> **系统架构**
->
-> 本系统采用 FastAPI Gateway + Supabase（Postgres + Storage）+ Expo React Native 的三层架构。
->
-> **数据采集与处理**：Reader（真实 Impinj 硬件、Stream Simulator 或 Terminal Simulator）通过 NDJSON 数据流或 HTTP POST 将 tagInventory 事件输入 Gateway。Gateway 使用 ActiveTags（3 秒滑动窗口）维护短时活跃标签，并通过 TagInfoCache（24 小时 TTL）缓存 IAS 鉴定结果以减少重复请求。首次出现或缓存过期的标签会调用 IAS Service 获取真伪认证结果，随后写入 Supabase 的 data 表（按 tag_id 的 upsert 策略，只保存每个标签的最新记录）。
->
-> **前端展示与交互**：前端 Dashboard 每 1 秒轮询 Gateway 的 `/api/active-tags` 获取最新活跃标签，并通过查询 Supabase 的 product_info 判断是否已注册商品。若未注册，显示"未注册"提示，用户可通过 NewProduct Modal 填写 tid/epc/description/origin/produced_on 并上传商品图片（存储到 Supabase Storage 的 product-photos bucket）。若已注册，显示商品信息，用户可通过 ViewItem Modal 查看或编辑商品详情、上传新图片（插入 product_photo 记录）。Logs 页面直接查询 Supabase data 表按 date 倒序展示所有标签的最新扫描记录；Search 页面直接查询 product_info 表，支持按 tid 或 epc 精确检索并展示 tid、epc、description、origin、produced_on 五项信息。
-
----
-
-## 总结清单
-
-```
-系统组件：
-  ✓ 三种 Reader（真实 Impinj + 两个 Simulator）
-  ✓ FastAPI Gateway（ActiveTags + TagInfoCache + IAS + DB Writer）
-  ✓ Supabase 数据库（data / product_info / product_photo 表）
-  ✓ Supabase Storage（product-photos bucket）
-  ✓ Expo React Native 前端（5 个主要界面）
-
-核心功能：
-  ✓ 实时识别（3s 窗口 + 1s 前端轮询）
-  ✓ 商品注册（NewProduct Modal + 图片上传）
-  ✓ 商品编辑（ViewItem Modal + 图片管理）
-  ✓ 历史记录（Logs 页面 + 按时间倒序）
-  ✓ 精确搜索（Search 页面 + tid/epc）
-
-关键决策：
-  ✓ ActiveTags 3 秒 - 平衡识别稳定性和实时性
-  ✓ TagInfoCache 24h - 避免重复 IAS 查询
-  ✓ data 表 upsert - 保持表大小可控
-  ✓ Search 直查 Supabase - 简化架构，快速响应
-```
-
----
 
 ## 声明: 
 
