@@ -22,7 +22,7 @@ Box Number    Content
 The CPU's job: start from address 100, read instructions one by one, and do what they say.
 The diagram below shows the state of all CPU components during the execution of the third instruction `STORE 12`:
 
-![CPU Executing Third Instruction STORE 12](./images/cpu-execute.jpg)
+![CPU Executing Third Instruction STORE 12](/images/CPU-execute.jpg)
 
 ---
 
