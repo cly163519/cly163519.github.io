@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Career changer must read: From Zero to Backend - The Core Concept"
-date: 2025-01-16
+date: 2026-01-16
 categories: [programming, backend, tutorial]
 tags: [java, backend, beginner, career changer, learning-path]
 ---
