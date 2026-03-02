@@ -6,6 +6,9 @@
 
 ## A Simple Setup
 
+![Uploading image.png…]()
+
+
 Imagine memory as a row of numbered boxes. Each box can hold either **data** or an **instruction**.
 
 ```
