@@ -6,9 +6,6 @@
 
 ## A Simple Setup
 
-![Uploading image.png…]()
-
-
 Imagine memory as a row of numbered boxes. Each box can hold either **data** or an **instruction**.
 
 ```
@@ -23,6 +20,10 @@ Box Number    Content
 ```
 
 The CPU's job: start from address 100, read instructions one by one, and do what they say.
+The diagram below shows the state of all CPU components during the execution of the third instruction `STORE 12`:
+
+![CPU Executing Third Instruction STORE 12](./images/cpu-execute.png)
+
 
 ---
 
