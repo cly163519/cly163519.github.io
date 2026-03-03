@@ -32,7 +32,8 @@ The CPU/ALU mainly handles **address calculations** and **data processing**. The
 - [3) Example: references on the stack, objects on the heap](#3-example-references-on-the-stack-objects-on-the-heap)
 - [4) Does all Java programming activity operate on the heap and stack?](#4-does-all-java-programming-activity-operate-on-the-heap-and-stack)
 - [5) Common misconception](#5-common-misconception)
-- [中文版本](#中文版本)
+- <a id="sec-zh"></a>
+- [中文版本](#sec-zh)
 
 ---
 
@@ -135,19 +136,29 @@ CPU/ALU 只负责算地址和算数据，JVM 把你的代码翻译成这些读�
 
 ### 下面按你问的三点展开。
 ## 1) Java 里“栈”和“堆”分别放什么？
-栈（Stack）：每个线程都有一条 栈里主要是栈帧（stack frame），每次方法调用都会创建一个栈帧，里面放： 局部变量表（local variables）：基本类型值（int/double/boolean 等），以及对象引用 reference 操作数栈（operand stack）：执行字节码时的临时计算 返回地址、一些 bookkeeping 信息
+栈（Stack）：
+每个线程都有一条 栈里主要是栈帧（stack frame），每次方法调用都会创建一个栈帧，
+里面放： 
+局部变量表（local variables）：
+基本类型值（int/double/boolean 等），
+以及对象引用 reference 
+操作数栈（operand stack）：执行字节码时的临时计算 返回地址、一些 bookkeeping 信息
+
 ✅ 重点：栈里一般不放对象本体，只放“引用（地址/句柄）”。
 堆（Heap）：所有线程共享 堆里放： new 出来的对象 数组 对象的字段（fields）
 ✅ 重点：你写 new Person()，Person 的“本体”在堆上。
 
 ## 2) Java 里除了堆和栈，还有什么“内存空间”？
 有，而且很重要：
-方法区 / 元空间（Metaspace） 类
-的元数据：类名、方法表、字段信息、常量池、字节码等（不同 JVM 细节不同）
+方法区 / 元空间（Metaspace） 
+类的元数据：类名、方法表、字段信息、常量池、字节码等（不同 JVM 细节不同）
 HotSpot JVM 从 Java 8 起用 Metaspace（在本地内存里）替代了永久代 PermGen（历史名词）
 本地内存（Native / Off-Heap）
-直接内存：ByteBuffer.allocateDirect() JNI 调用 C/C++ 分配的内存 JVM 自己的一些结构（JIT 代码缓存等）
-还有：寄存器/缓存（硬件层） 这些不按“堆/栈”划分，但真实存在，并且性能影响巨大： CPU registers / L1 L2 L3 cache ## 3) 用一个
+直接内存：ByteBuffer.allocateDirect() 
+JNI 调用 C/C++ 分配的内存 
+JVM 自己的一些结构（JIT 代码缓存等）
+还有：寄存器/缓存（硬件层） 
+这些不按“堆/栈”划分，但真实存在，并且性能影响巨大： CPU registers / L1 L2 L3 cache ## 3) 用一个
 
 Java 例子把“引用在栈、对象在堆”讲透:
 
