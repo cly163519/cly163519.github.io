@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Times-7 RFID System - Complete Architecture Design Document
-date: 2024-01-28
+date: 2026-02-17
 categories: [System Design, Architecture]
 tags: [RFID, FastAPI, Supabase, React Native]
 lang: en
