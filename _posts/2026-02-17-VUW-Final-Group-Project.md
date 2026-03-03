@@ -6,7 +6,7 @@ categories: [System Design, Architecture]
 tags: [RFID, FastAPI, Supabase, React Native]
 ---
 
-# Times-7 RFID 系统 - 完整架构设计文档
+
 
 ## 第一部分：系统架构概览
 
