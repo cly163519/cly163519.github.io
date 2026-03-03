@@ -7,7 +7,6 @@ tags: [RFID, FastAPI, Supabase, React Native]
 lang: en
 ---
 
-# Times-7 RFID System - Complete Architecture Design Document
 
 ## Part 1: System Architecture Overview
 
