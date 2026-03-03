@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: Times-7 RFID System - Complete Architecture Design Document
 date: 2024-01-28
