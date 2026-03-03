@@ -32,7 +32,6 @@ The CPU/ALU mainly handles **address calculations** and **data processing**. The
 - [3) Example: references on the stack, objects on the heap](#3-example-references-on-the-stack-objects-on-the-heap)
 - [4) Does all Java programming activity operate on the heap and stack?](#4-does-all-java-programming-activity-operate-on-the-heap-and-stack)
 - [5) Common misconception](#5-common-misconception)
-- <a id="sec-zh"></a>
 - [中文版本](#sec-zh)
 
 ---
