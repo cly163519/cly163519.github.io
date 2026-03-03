@@ -8,8 +8,6 @@ lang: en
 permalink: /en/how-software-drives-hardware/
 ---
 
-# How Software Drives Hardware: From Levels to Programs, Back to Levels
-
 Many ask: “How does software drive hardware?” 
 
 The key idea is simple:
