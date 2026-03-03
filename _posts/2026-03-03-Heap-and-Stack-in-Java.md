@@ -126,11 +126,14 @@ Objects typically live on the heap
 
 Note: with JVM optimizations (escape analysis, scalar replacement), some objects may not actually be allocated on the heap. This is an optimization detail and does not change the basic mental model.
 
-Completed with assistance from ChatGPT 5.2
+**Completed with assistance from ChatGPT 5.2*
 
 
 
-## 中文版本 {: #sec-zh }
+
+## 中文版本 
+{: #sec-zh }
+
 ## 问题: 栈,堆这些概念, 和ALU什么关系?所有的内存只分为堆和栈?没有其他空间?人们所有的编程活动, 都是在操作堆和栈?
 Java 程序员“感觉自己在操作对象”，但 JVM 实际是在操作：栈（每个线程的栈帧）+ 堆（对象/数组）+ 方法区/元空间（类信息）+ 一些本地内存。
 CPU/ALU 只负责算地址和算数据，JVM 把你的代码翻译成这些读写。
@@ -163,6 +166,7 @@ JVM 自己的一些结构（JIT 代码缓存等）
 
 Java 例子把“引用在栈、对象在堆”讲透:
 
+
 ```
 Java
 class Person { int age; }
@@ -173,6 +177,7 @@ void f() {
   p.age = x + 2;
 }
 ```
+
 # 运行时大致是：
 x 是基本类型，存在 栈帧的局部变量表里（或被优化到寄存器）
 p 是引用，存在 栈帧局部变量表里（像一个“指向堆对象的指针/句柄”）
