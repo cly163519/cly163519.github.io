@@ -89,6 +89,7 @@ void f() {
   Person p = new Person();
   p.age = x + 2;
 }
+```
 
 Runtime overview:
 
@@ -103,6 +104,8 @@ Write the result into the object field age (write to heap memory)
 So the ALU’s role is mainly:
 Calculate values (x + 2)
 Calculate addresses (object base address + field offset)
+
+---
 
 ## 4) Does all Java programming activity operate on the heap and stack?
 Most business logic state is indeed mainly located in:
@@ -172,6 +175,8 @@ new Person() 产生的对象本体在 堆 上 p.age = x + 2
 ## 5) 一个特别关键的“Java误区纠正”
 很多人以为：“局部变量对象一定在栈上” 在 Java 里一般不这么说。
 正确理解是： 局部变量“引用”在栈上 对象通常在堆上 但 JVM 有优化（逃逸分析）时，某些对象可能被“标量替换”，甚至不真的在堆上分配（这属于优化细节，不影响你理解模型）
+
+
 **在ChatGPT5.2协助下完成*
 
 
