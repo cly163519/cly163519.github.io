@@ -80,7 +80,7 @@ The Loan class is the product of modeling—it isn't a “thing” in reality, b
 - Yes: May cascade REMOVE  
 - No: Avoid unnecessary cascade deletion
 
-**I give questions, ChatGPT5.2 give its answers.*
+**I ask questions, ChatGPT5.2 give its answers.*
 
 ## 中文版本 
 {: #sec-zh }
