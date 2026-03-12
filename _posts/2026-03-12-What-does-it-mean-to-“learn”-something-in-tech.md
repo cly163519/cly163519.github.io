@@ -29,7 +29,7 @@ ________________________________________
 ## 2. “Understanding” in Technology Isn't One-Dimensional  
 
 We can divide “understanding” into 4 layers  
-# ## Level 1: Recognition  
+### Level 1: Recognition  
 Knowing what something is called and its general purpose  
 For example:  
 •    Knowing APIs are used for data exchange between frontend and backend  
@@ -78,22 +78,23 @@ ________________________________________
 ## IV. Why Do You Always Get Stumped?  
 Because technical questions can be drilled down endlessly.  
 Take ArrayList as an example.  
-First-level answer:  
+**First-level answer:**  
 •    It's a resizable array  
 Follow-up question:  
 •    Why is searching fast?  
-Second-level answer:  
+**Second-level answer:**  
 •    Because it accesses by index  
-Further question:  
+**Further question:**  
 •    How does underlying capacity expansion work?  ...
   
 This doesn't mean the first two layers weren't understood.   
-It simply indicates the underlying implementation hasn't been learned yet.   
-Thus, a crucial technical insight is:  
+It simply indicates the underlying implementation hasn't been learned yet.    
+Thus, a crucial technical insight is:   
 Being stumped doesn't mean you haven't learned; it means you've reached your knowledge boundary.  
 Everyone has limits.  
 The difference lies only in whose limits are temporarily deeper.  
 ________________________________________
+
 ## V. How to determine if you're merely “skimming the surface”?  
 Ask yourself these three questions:  
 ### 1. Can you implement it independently without examples?  
@@ -142,7 +143,7 @@ But often, it's because the context provides many clues:
 • Comments explain purpose  
 • Function names suggest intent  
 • Project structure indicates context  
-This creates an illusion of understanding.  
+**This creates an illusion of understanding.**  
 But when writing your own code, these cues vanish.  
 You must build the structure from scratch—and suddenly feel lost.  
 This is why:  
@@ -266,6 +267,7 @@ The fundamental gap between “understanding” and “writing it yourself” is
 The former involves recognizing existing answers, while the latter involves generating answers from blank pages. The latter is far more difficult.  
 
 **Questions posed by the author, answered by ChatGPT 5.4, translated from Chinese to English by DeepL*  
+
 
 
 ## 一、学技术最折磨人的核心是什么？到底学到什么程度，才能叫“我学会了”？
