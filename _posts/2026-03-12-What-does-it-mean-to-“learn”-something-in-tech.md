@@ -75,6 +75,7 @@ Even if you need to look up details, you can complete it.
 Even knowing just 1–2 common mistakes counts.  
 If you can meet these 4 criteria, you've mastered the foundational level—not yet the advanced level.  
 ________________________________________
+
 ## IV. Why Do You Always Get Stumped?  
 Because technical questions can be drilled down endlessly.  
 Take ArrayList as an example.  
@@ -107,10 +108,12 @@ But note:
 Mastery doesn't require handling every possible variation.  
 It's sufficient to remain stable under common variations.  
 ________________________________________
-## 6. Why is there such a huge gap between “understanding code” and “writing it yourself”?  
+
+## VI. Why is there such a huge gap between “understanding code” and “writing it yourself”?  
 Because these two tasks fundamentally require different skills.  
 This gap is substantial and encountered by everyone learning to code.  
 ________________________________________
+
 ### 1. Reading is “Recognition,” Writing is “Creation”  
 When reading code, the answers are already laid out before you.  
 You simply need to:  
