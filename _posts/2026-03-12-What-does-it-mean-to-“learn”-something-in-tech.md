@@ -109,7 +109,7 @@ Mastery doesn't require handling every possible variation.
 It's sufficient to remain stable under common variations.  
 ________________________________________
 
-## VI. Why is there such a huge gap between “understanding code” and “writing it yourself”?  
+## VI. Why is there such a huge gap between “understanding code” and “writing it yourself”?    
 Because these two tasks fundamentally require different skills.  
 This gap is substantial and encountered by everyone learning to code.  
 ________________________________________
