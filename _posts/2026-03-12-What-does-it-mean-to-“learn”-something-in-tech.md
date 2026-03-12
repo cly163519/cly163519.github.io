@@ -26,7 +26,7 @@ You've grasped one layer, but not the deeper one yet.
 This is not the same as “not understanding at all.”  
 ________________________________________
 
-## 2. “Understanding” in Technology Isn't One-Dimensional  
+## II. “Understanding” in Technology Isn't One-Dimensional  
 
 We can divide “understanding” into 4 layers  
 ### Level 1: Recognition  
